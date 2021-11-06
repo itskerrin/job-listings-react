@@ -1,4 +1,4 @@
-import styles from './JobCard.module.css';
+// import styles from './JobCard.module.css';
 
 const JobCard = ({
   company,
@@ -13,7 +13,10 @@ const JobCard = ({
   isNew,
   role,
   level,
+  handleKeywordClick,
 }) => {
+  const keywords = [...languages, ...tools, role, level];
+
   return (
     <div className={`flex-container ${featured && 'flex-container-featured'}`}>
       <div>
@@ -29,11 +32,14 @@ const JobCard = ({
         </p>
       </div>
       <div>
-        <span>{role}</span>
-        <span>{level}</span>
-        {languages ? languages.map((l) => <span>{l}</span>) : ''}
-        {/* checks if there are any in array and returns span */}
-        {tools ? tools.map((t) => <span>{t}</span>) : ''}
+        {keywords
+          ? keywords.map((keyword) => (
+              <span key={keyword} onClick={() => handleKeywordClick(keyword)}>
+                {keyword}
+              </span>
+            ))
+          : ''}
+        {/* checks if there are any keywords in array and returns span */}
       </div>
     </div>
   );
