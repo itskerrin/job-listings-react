@@ -37,16 +37,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* Headers */}
-      <header className="header-desktop">
+      {/* Header */}
+      <header className="header-img">
         <img src="/images/bg-header-desktop.svg" alt="Desktop Header" />
-      </header>
-      <header className="header-mobile">
-        <img src="/images/bg-header-mobile.svg" alt="Mobile Header" />
       </header>
       {/* Filters */}
       {filters.length > 0 && (
-        <div>
+        <div className="filter-container">
           {filters.map((filter) => (
             <span onClick={() => handleRemoveFilter(filter)}>{filter}</span>
           ))}
@@ -55,15 +52,17 @@ function App() {
         </div>
       )}
       {/* Display job listings */}
-      {filteredJobs.map((job) => {
-        return (
-          <JobCard
-            key={job.id}
-            {...job}
-            handleKeywordClick={handleKeywordClick}
-          />
-        );
-      })}
+      <div className="listings">
+        {filteredJobs.map((job) => {
+          return (
+            <JobCard
+              key={job.id}
+              {...job}
+              handleKeywordClick={handleKeywordClick}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

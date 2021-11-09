@@ -11,20 +11,23 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--light-gray-cyan-bg);
   font-family: 'Spartan', sans-serif;
+  font-size: 15px;
 }
 
-.header-desktop {
-  display: none;
+.header-img {
+  background: var(--desat-dark-cyan);
+  overflow: hidden;
+  margin-bottom: 10%;
 }
 
-/* Screens bigger than mobile */
-@media only screen and (max-width: 375px) {
-  .header-mobile {
-    display: none;
-  }
+.listings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
