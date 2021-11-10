@@ -42,7 +42,7 @@ const JobCard = ({
             </button>
           )}
         </div>
-        <h3 className={styles.position}>{position}</h3>
+        <p className={styles.position}>{position}</p>
         <p className={styles.details}>
           {postedAt} • {contract} • {location}
         </p>

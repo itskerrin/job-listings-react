@@ -26,6 +26,53 @@ body {
   margin-bottom: 10%;
 }
 
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: white;
+  margin: 6% 6%;
+  margin-top: -4.5em;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  background: var(--light-gray-cyan-bg);
+  color: var(--desat-dark-cyan);
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  margin: 0.6em 1.2em;
+  margin-left: -1px;
+  padding: 9px;
+}
+
+.filter-btn::after {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f00d';
+  font-size: 17px;
+  background: var(--desat-dark-cyan);
+  color: white;
+  position: relative;
+  left: 0.6em;
+  padding: 9.5px;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+
+.clear-btn {
+  cursor: pointer;
+  background: white;
+  color: var(--dark-gray-cyan);
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 0.8em;
+  margin-left: auto;
+}
+
 .listings {
   display: flex;
   flex-direction: column;

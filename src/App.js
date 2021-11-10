@@ -44,11 +44,23 @@ function App() {
       {/* Filters */}
       {filters.length > 0 && (
         <div className="filter-container">
-          {filters.map((filter) => (
-            <span onClick={() => handleRemoveFilter(filter)}>{filter}</span>
-          ))}
+          <div className="all-filters">
+            {filters.map((filter) => (
+              <>
+                {/* Display filter */}
+                <button
+                  className="filter-btn"
+                  onClick={() => handleRemoveFilter(filter)}
+                >
+                  {filter}
+                </button>
+              </>
+            ))}
+          </div>
           {/* Clear */}
-          <button onClick={clearAllFilters}>Clear</button>
+          <button onClick={clearAllFilters} className="clear-btn">
+            Clear
+          </button>
         </div>
       )}
       {/* Display job listings */}
