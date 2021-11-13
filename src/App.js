@@ -40,12 +40,12 @@ function App() {
       {/* Header */}
       <header className="header-img">
         <img
-          src="/images/bg-header-desktop.svg"
+          src="https://itskerrin.github.io/job-listings-react/images/bg-header-desktop.svg"
           alt="Desktop Header"
           className="desktop-header"
         />
         <img
-          src="/images/bg-header-mobile.svg"
+          src="https://itskerrin.github.io/job-listings-react/images/bg-header-mobile.svg"
           alt="Desktop Header"
           className="mobile-header"
         />
