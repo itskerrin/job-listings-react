@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/job-listings-react/static/css/main.41c8c0a5.chunk.css",
+    "main.js": "/job-listings-react/static/js/main.96b41756.chunk.js",
+    "main.js.map": "/job-listings-react/static/js/main.96b41756.chunk.js.map",
+    "runtime-main.js": "/job-listings-react/static/js/runtime-main.8a1f3e93.js",
+    "runtime-main.js.map": "/job-listings-react/static/js/runtime-main.8a1f3e93.js.map",
+    "static/js/2.23028890.chunk.js": "/job-listings-react/static/js/2.23028890.chunk.js",
+    "static/js/2.23028890.chunk.js.map": "/job-listings-react/static/js/2.23028890.chunk.js.map",
+    "index.html": "/job-listings-react/index.html",
+    "static/css/main.41c8c0a5.chunk.css.map": "/job-listings-react/static/css/main.41c8c0a5.chunk.css.map",
+    "static/js/2.23028890.chunk.js.LICENSE.txt": "/job-listings-react/static/js/2.23028890.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a1f3e93.js",
+    "static/js/2.23028890.chunk.js",
+    "static/css/main.41c8c0a5.chunk.css",
+    "static/js/main.96b41756.chunk.js"
+  ]
+}
