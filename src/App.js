@@ -40,12 +40,12 @@ function App() {
       {/* Header */}
       <header className="header-img">
         <img
-          src="../public/images/bg-header-desktop.svg"
+          src="/images/bg-header-desktop.svg"
           alt="Desktop Header"
           className="desktop-header"
         />
         <img
-          src="..public/images/bg-header-mobile.svg"
+          src="/images/bg-header-mobile.svg"
           alt="Desktop Header"
           className="mobile-header"
         />
