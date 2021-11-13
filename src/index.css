@@ -23,7 +23,11 @@ body {
 .header-img {
   background: var(--desat-dark-cyan);
   overflow: hidden;
-  margin-bottom: 10%;
+  margin-bottom: 2em;
+}
+
+.desktop-header {
+  display: none;
 }
 
 .filter-container {
@@ -35,6 +39,7 @@ body {
   margin-top: -4.5em;
   padding: 5%;
   border-radius: 10px;
+  box-shadow: 0px 8px 19px -3px rgba(96, 165, 165, 0.5);
 }
 
 .filter-btn {
@@ -77,4 +82,179 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* JobCard */
+/* -------------------------------------------------------------------- */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: white;
+  width: 88%;
+  margin: 1.5em 0;
+  box-shadow: 0px 8px 19px -3px rgba(96, 165, 165, 0.5);
+  /* display */
+  padding: 1.4em;
+  border-radius: 10px;
+}
+
+.featured {
+  border-left: 5px solid var(--desat-dark-cyan);
+}
+
+.company-img {
+  margin-top: -5em;
+  margin-bottom: 0.5em;
+  width: 15%;
+}
+
+.company {
+  font-weight: 700;
+  margin-right: 1em;
+  color: var(--desat-dark-cyan);
+}
+
+.position {
+  color: var(--v-dark-gray-cyan);
+  margin: 1em 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.new {
+  background: var(--desat-dark-cyan);
+  margin-right: 0.7em;
+}
+
+.new-featured {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  border: transparent;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+
+.featured-job {
+  background: var(--v-dark-gray-cyan);
+}
+
+.details {
+  color: var(--dark-gray-cyan);
+  font-size: 14px;
+  margin: 1em 0;
+}
+
+.divider {
+  margin-bottom: 0.5em;
+}
+
+/* keyword container */
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* indiv. span */
+.keyword-btn {
+  cursor: pointer;
+  background: var(--light-gray-cyan-bg);
+  color: var(--desat-dark-cyan);
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  margin: 0.5em 1em;
+  margin-left: -1px;
+  padding: 9px;
+}
+
+/* Larger mobile screens */
+@media only screen and (min-width: 376px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+  }
+
+  .company-img {
+    margin-top: -4em;
+    margin-bottom: 80px;
+    width: 10%;
+  }
+
+  /* Filters */
+  .filter-container {
+    margin-top: -4.7em;
+    margin-bottom: 40px;
+    padding: 1em 2em;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .header-img {
+    margin-bottom: 3.5em;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 87%;
+    margin: 1em 0;
+    padding: 1em;
+  }
+
+  .company-img {
+    margin: 0.8em;
+    padding-right: 0.5em;
+    width: 80%;
+  }
+
+  .details {
+    color: var(--dark-gray-cyan);
+    font-size: 14px;
+    margin: 1em 0;
+  }
+
+  .keywords {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  /* Filters */
+  .filter-container {
+    margin-top: -6em;
+    margin-bottom: 20px;
+    padding: 1em 2em;
+  }
 }

@@ -1,4 +1,4 @@
-import styles from './JobCard.module.css';
+import '../index.css';
 
 const JobCard = ({
   company,
@@ -18,41 +18,29 @@ const JobCard = ({
   const keywords = [...languages, ...tools, role, level];
 
   return (
-    <div
-      className={
-        featured
-          ? `${styles.flexContainer} ${styles.featured}`
-          : `${styles.flexContainer}`
-      }
-    >
+    <div className={featured ? 'flex-container featured' : 'flex-container'}>
       <div>
-        <img src={logo} alt={company} className={styles.companyImg} />
+        <img src={logo} alt={company} className="company-img" />
       </div>
       <div>
         <div>
-          <span className={styles.company}>{company}</span>
-          {isNew && (
-            <button className={`${styles.new} ${styles.newFeatured}`}>
-              New!
-            </button>
-          )}
+          <span className="company">{company}</span>
+          {isNew && <button className="new new-featured">New!</button>}
           {featured && (
-            <button className={`${styles.featuredJob} ${styles.newFeatured}`}>
-              Featured
-            </button>
+            <button className="featured-job new-featured">Featured</button>
           )}
         </div>
-        <p className={styles.position}>{position}</p>
-        <p className={styles.details}>
+        <p className="position">{position}</p>
+        <p className="details">
           {postedAt} • {contract} • {location}
         </p>
       </div>
-      <hr className={styles.divider}></hr>
-      <div className={styles.keywords}>
+      <hr className="divider"></hr>
+      <div className="keywords">
         {keywords
           ? keywords.map((keyword) => (
               <button
-                className={styles.keywordBtn}
+                className="keyword-btn"
                 key={keyword}
                 onClick={() => handleKeywordClick(keyword)}
               >
